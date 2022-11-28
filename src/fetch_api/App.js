@@ -7,7 +7,7 @@ function App() {
   // console.log(data);
   const fetchData = () => {
     return fetch(`https://api.agify.io/?name=${name}`)
-      .then((Response) => Response.json())
+      .then((response) => response.json())
       .then((data) => setData(data));
   };
   function handleName(event) {
